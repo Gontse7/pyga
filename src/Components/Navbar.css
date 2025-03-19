@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;  
+    padding: 15px;
     position: fixed;
-    z-index:9999;
+    z-index: 9999;
     width: 100%;
     background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better design */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
 }
 
 .nav-logo{
@@ -58,10 +60,14 @@ background-color:orange;
     cursor: pointer;
 }
 
-@media screen (max-width: 850px) {
+@media screen and (max-width: 850px) {
 
     .menu-icons {
         display: block;
+    }
+
+    button{
+        display: none;
     }
 
     .nav-menu {
